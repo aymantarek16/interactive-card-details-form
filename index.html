@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
   <title>Interactive card details form</title>
+  <script src="./main.js" defer></script>
 </head>
 
 
@@ -15,24 +16,24 @@
     <div class="aside_mentor"></div>
 
 
-    <form class="mentor_form" onSubmit={handleSignUp} ref={formRef}>
+    <form class="mentor_form">
       <label class="fw-bold">CARDHOLDER NAME</label>
       <div class="form_name">
-        <input required type="text" placeholder="e.g Jane Applessed" />
+        <input required type="text" placeholder="e.g Jane Applessed" id="userName" />
       </div>
       <label>CARD NUMBER</label>
       <div class="form_number">
-        <input required type="text" placeholder="e.g 1234 5678 9123 0000" />
+        <input required type="text" placeholder="e.g 1234 5678 9123 0000" id="number" />
       </div>
       <div class="exp_labels">
         <label>EXP DATE (MM/YY)</label>
         <label class="fw-bold cvc">cvc</label>
       </div>
       <div class="exp_inputs">
-        <input required type="text" placeholder="MM" class="me-2" />
-        <input required type="text" placeholder="YY" />
-        <input required type="text" placeholder="e.g 123" class="eg" />
-        <button class="btn_mentor">Confirm</button>
+        <input required type="text" placeholder="MM"  id="month"/>
+        <input required type="text" placeholder="YY" id="year"/>
+        <input required type="text" placeholder="e.g 123" class="eg" id="eg" />
+        <button class="btn_mentor" id="btnMentor">Confirm</button>
       </div>
     </form>
     <div class="mentor_card1">
