@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Interactive card details form</title>
+</head>
+
+
+<body>
+  <div class="mentor_1">
+    <div class="aside_mentor"></div>
+
+
+    <form class="mentor_form" onSubmit={handleSignUp} ref={formRef}>
+      <label class="fw-bold">CARDHOLDER NAME</label>
+      <div class="form_name">
+        <input required type="text" placeholder="e.g Jane Applessed" />
+      </div>
+      <label>CARD NUMBER</label>
+      <div class="form_number">
+        <input required type="text" placeholder="e.g 1234 5678 9123 0000" />
+      </div>
+      <div class="exp_labels">
+        <label>EXP DATE (MM/YY)</label>
+        <label class="fw-bold cvc">cvc</label>
+      </div>
+      <div class="exp_inputs">
+        <input required type="text" placeholder="MM" class="me-2" />
+        <input required type="text" placeholder="YY" />
+        <input required type="text" placeholder="e.g 123" class="eg" />
+        <button class="btn_mentor">Confirm</button>
+      </div>
+    </form>
+    <div class="mentor_card1">
+      <div class="circle_one"></div>
+      <div class="circle_two"></div>
+
+      <div class="card_footer">
+        <h2>9591 6489 6389 1012</h2>
+        <div class="end">
+          <p>Ayman Tarek</p>
+          <span>26/09</span>
+        </div>
+      </div>
+    </div>
+    <div class="mentor_card2">
+      <span>228</span>
+    </div>
+  </div>
+
+</body>
+
+</html>
